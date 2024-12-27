@@ -6,12 +6,12 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <h1 className="navbar-logo">IT Department</h1>
+        <h1 className="navbar-logo">เทคโนโลยีสารสนเทศ</h1>
         <ul className="navbar-links">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/courses">Courses</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
+          <li><Link to="/">หน้าหลัก</Link></li>
+          <li><Link to="/about">เกี่ยวกับเรา</Link></li>
+          <li><Link to="/courses">หลักสูตร</Link></li>
+          <li><Link to="/contact">ติดต่อเรา</Link></li>
         </ul>
       </div>
     </nav>
