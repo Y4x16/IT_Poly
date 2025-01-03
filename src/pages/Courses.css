@@ -1,34 +1,69 @@
-.container {
+/* สไตล์พื้นฐานของหน้า Courses */
+.courses {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.courses-container {
+  max-width: 1200px;
+  margin: 0 auto;
   text-align: center;
-  padding: 50px;
-  background-color: #f0f8ff;
-  font-family: "Arial", sans-serif;
 }
 
-h1 {
-  font-size: 2.5rem;
-  color: #ffd000;
-  margin-bottom: 20px;
+.courses-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #4CAF50;
 }
 
-h2 {
-  font-size: 2rem;
-  color: #2980b9;
+.courses-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.course {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.course:hover {
+  transform: scale(1.05);
+}
+
+.course h3 {
+  font-size: 24px;
+  color: #333;
   margin-bottom: 10px;
 }
 
-p {
-  font-size: 1.6rem;
-  color: #ffffff;
-  font-weight: bold;
+.course p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.6;
 }
 
-h3 {
+.course ul {
+  list-style-type: disc;
+  padding-left: 20px;
   text-align: left;
 }
 
-.container {
-  border-radius: 10px;
-  margin: 0 auto;
-  background-color: #17570a;
+.course ul li {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* สำหรับหน้าจอขนาดเล็ก */
+@media screen and (max-width: 768px) {
+  .courses-content {
+    grid-template-columns: 1fr;
+  }
 }

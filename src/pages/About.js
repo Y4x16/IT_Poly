@@ -1,12 +1,33 @@
 import React from "react";
+import "./About.css";
 
 function About() {
   return (
-    <div className="container mx-auto p-4">
-      <h2 className="text-2xl font-bold">Welcome to the IT Department</h2>
-      <p className="mt-2">
-        This is the home page of the IT Department at Lanna Polytechnic College.
-      </p>
+    <div className="about">
+      <div className="about-overlay">
+        <div className="about-content">
+          <h2 className="about-title">วิทยาลัยเทคโนโลยีโปลิเทคนิคลานนา เชียงใหม่</h2>
+          <p className="about-intro">
+            ยินดีต้อนรับสู่สาขาเทคโนโลยีสารสนเทศ เรามุ่งเน้นการพัฒนานักเรียนให้มีความรู้และทักษะทางด้านเทคโนโลยี
+            พร้อมกับความคิดสร้างสรรค์ในการแก้ปัญหาเพื่ออนาคตที่ยั่งยืน
+          </p>
+          <div className="about-vision">
+            <h3>วิสัยทัศน์</h3>
+            <p>
+              "สร้างบุคลากรที่มีความรู้ ความสามารถ และทักษะในการประยุกต์ใช้เทคโนโลยีสารสนเทศ
+              เพื่อการพัฒนาสังคมและเศรษฐกิจ"
+            </p>
+          </div>
+          <div className="about-goal">
+            <h3>เป้าหมาย</h3>
+            <p>
+              1. พัฒนานักเรียนให้มีทักษะการเขียนโปรแกรมและการแก้ปัญหาทางเทคนิค<br />
+              2. สร้างสรรค์งานวิจัยและนวัตกรรมที่ตอบโจทย์ความต้องการของสังคม<br />
+              3. ผลิตบัณฑิตที่มีคุณธรรมและจริยธรรมในการทำงาน
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,34 +1,51 @@
-.home {
-  text-align: center;
-  padding: 50px;
-  background-color: #f0f8ff;
-  font-family: "Arial", sans-serif;
+/* สไตล์พื้นฐาน */
+.about {
+  background-image: url('/src/images/image5.jpg'); /* รูปภาพพื้นหลัง */
+  background-size: cover; /* ทำให้ภาพครอบคลุมพื้นที่ */
+  background-position: center; /* จัดภาพให้อยู่ตรงกลาง */
+  height: 100vh; /* ความสูงเต็มหน้าจอ */
+  display: flex;
+  justify-content: center; /* จัดกลางแนวนอน */
+  align-items: center; /* จัดกลางแนวตั้ง */
+  position: relative;
+  color: white;
+  font-family: 'Arial', sans-serif;
 }
 
-h1 {
-  font-size: 2.5rem;
-  color: #ffd000;
+.about-overlay {
+  background-color: rgba(0, 0, 0, 0.6); /* เพิ่มเลเยอร์มืดเพื่ออ่านข้อความง่ายขึ้น */
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.about-content {
+  max-width: 800px;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 36px;
+  font-weight: bold;
   margin-bottom: 20px;
 }
 
-h2 {
-  font-size: 2rem;
-  color: #2980b9;
+.about-intro {
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.about-vision, .about-goal {
+  margin-bottom: 20px;
+}
+
+.about-vision h3, .about-goal h3 {
+  font-size: 24px;
+  color: #4CAF50;
   margin-bottom: 10px;
 }
 
-p {
-  font-size: 1.6rem;
-  color: #ffffff;
-  font-weight: bold;
-}
-
-h3 {
-  text-align: left;
-}
-
-.home {
-  border-radius: 10px;
-  margin: 0 auto;
-  background-color: #17570a;
+.about-vision p, .about-goal p {
+  font-size: 16px;
+  line-height: 1.8;
 }

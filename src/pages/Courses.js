@@ -1,12 +1,38 @@
 import React from "react";
+import "./Courses.css";
 
 function Courses() {
   return (
-    <div className="container mx-auto p-4">
-      <h2 className="text-2xl font-bold">Welcome to the IT Department</h2>
-      <p className="mt-2">
-        This is the home page of the IT Department at Lanna Polytechnic College.
-      </p>
+    <div className="courses">
+      <div className="courses-container">
+        <h2 className="courses-title">หลักสูตรที่เปิดสอน</h2>
+        <div className="courses-content">
+          <div className="course">
+            <h3>ระดับประกาศนียบัตรวิชาชีพ (ปวช)</h3>
+            <p>
+              หลักสูตร ปวช. มุ่งเน้นการพัฒนาทักษะพื้นฐานด้านเทคโนโลยีสารสนเทศ 
+              เช่น การเขียนโปรแกรมพื้นฐาน การสร้างเว็บไซต์ และการแก้ไขปัญหาด้านไอทีเบื้องต้น
+            </p>
+            <ul>
+              <li>การเขียนโปรแกรมพื้นฐานด้วยภาษา Python</li>
+              <li>การออกแบบและพัฒนาเว็บไซต์</li>
+              <li>การจัดการระบบเครือข่ายเบื้องต้น</li>
+            </ul>
+          </div>
+          <div className="course">
+            <h3>ระดับประกาศนียบัตรวิชาชีพชั้นสูง (ปวส)</h3>
+            <p>
+              หลักสูตร ปวส. เน้นการพัฒนาทักษะขั้นสูงในด้านเทคโนโลยีสารสนเทศ
+              รวมถึงการพัฒนาระบบซอฟต์แวร์และการวิเคราะห์ระบบเครือข่าย
+            </p>
+            <ul>
+              <li>การพัฒนาซอฟต์แวร์ด้วยภาษา Java</li>
+              <li>การจัดการฐานข้อมูลและการวิเคราะห์ข้อมูล</li>
+              <li>การออกแบบระบบเครือข่ายขั้นสูง</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

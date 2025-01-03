@@ -1,32 +1,65 @@
+/* กำหนดพื้นฐานของ Navbar */
 .navbar {
-    background-color: #005724;
-    color: white;
-    padding: 10px 20px;
-  }
-  
+  background-color: #333; /* สีพื้นหลังของ navbar */
+  color: white; /* สีตัวอักษร */
+  padding: 10px 0; /* ระยะห่างบนล่าง */
+  font-family: 'Arial', sans-serif; /* ใช้ฟอนต์สวยๆ */
+}
+
+.navbar-container {
+  max-width: 1200px; /* ขนาดสูงสุดของ container */
+  margin: 0 auto; /* จัดกึ่งกลาง */
+  display: flex;
+  justify-content: space-between; /* จัดการระยะห่างระหว่างโลโก้และลิงก์ */
+  align-items: center; /* จัดให้โลโก้และลิงก์อยู่กลางแนวตั้ง */
+  padding: 0 20px; /* ระยะห่างข้างๆ */
+}
+
+.navbar-logo {
+  font-size: 24px; /* ขนาดของตัวอักษรโลโก้ */
+  font-weight: bold; /* ตัวหนาของโลโก้ */
+  color: #4CAF50; /* สีโลโก้ */
+  text-transform: uppercase; /* ทำให้ตัวอักษรเป็นตัวพิมพ์ใหญ่ */
+  letter-spacing: 2px; /* เพิ่มระยะห่างระหว่างตัวอักษร */
+  cursor: pointer; /* เปลี่ยนเป็นมือเมื่อ hover */
+}
+
+.navbar-links {
+  list-style-type: none; /* เอาเครื่องหมายลูกน้ำออก */
+  display: flex;
+  margin: 0;
+}
+
+.navbar-links li {
+  margin-right: 20px; /* ระยะห่างระหว่างลิงก์ */
+}
+
+.navbar-links a {
+  color: white; /* สีของลิงก์ */
+  text-decoration: none; /* เอาขีดเส้นใต้ */
+  font-size: 18px; /* ขนาดตัวอักษร */
+  transition: color 0.3s ease; /* การเปลี่ยนแปลงสีค่อยๆ เมื่อ hover */
+}
+
+.navbar-links a:hover {
+  color: #4CAF50; /* เปลี่ยนเป็นสีเขียวเมื่อ hover */
+}
+
+/* การปรับแต่ง responsive สำหรับหน้าจอขนาดเล็ก */
+@media screen and (max-width: 768px) {
   .navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column; /* ทำให้เมนูแนวตั้ง */
+    align-items: flex-start; /* จัดให้เมนูอยู่ทางซ้าย */
   }
-  
-  .navbar-logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
+
   .navbar-links {
-    list-style: none;
-    display: flex;
-    gap: 15px;
+    width: 100%; /* ให้ลิงก์มีความกว้างเต็ม */
+    text-align: left; /* จัดลิงก์ทางซ้าย */
   }
-  
-  .navbar-links a {
-    color: white;
-    text-decoration: none;
+
+  .navbar-links li {
+    margin-right: 0;
+    padding: 10px 0; /* เพิ่มระยะห่างด้านบนและล่าง */
+    width: 100%; /* ให้ลิงก์มีความกว้างเต็ม */
   }
-  
-  .navbar-links a:hover {
-    text-decoration: underline;
-  }
-  
+}

@@ -1,34 +1,76 @@
-.home {
-  text-align: center;
-  padding: 50px;
-  background-color: #f0f8ff;
-  font-family: "Arial", sans-serif;
+/* สไตล์พื้นฐาน */
+.contact {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
 }
 
-h1 {
-  font-size: 2.5rem;
-  color: #ffd000;
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #4CAF50;
   margin-bottom: 20px;
 }
 
-h2 {
-  font-size: 2rem;
-  color: #2980b9;
-  margin-bottom: 10px;
+.contact-info {
+  margin-bottom: 30px;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.8;
 }
 
-p {
-  font-size: 1.6rem;
-  color: #ffffff;
-  font-weight: bold;
-}
-
-h3 {
+.contact-form {
   text-align: left;
 }
 
-.home {
-  border-radius: 10px;
-  margin: 0 auto;
-  background-color: #17570a;
+.contact-form h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #45a049;
+}
+
+/* สำหรับหน้าจอขนาดเล็ก */
+@media screen and (max-width: 768px) {
+  .contact-container {
+    padding: 20px;
+  }
+
+  .contact-title {
+    font-size: 28px;
+  }
 }

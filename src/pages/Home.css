@@ -1,34 +1,79 @@
+/* พื้นฐานของหน้า Home */
 .home {
-  text-align: center;
-  padding: 50px;
-  background-color: #f0f8ff;
-  font-family: "Arial", sans-serif;
+  background-color: #f4f4f9; /* สีพื้นหลังอ่อน */
+  padding: 40px 0;
+  font-family: 'Arial', sans-serif;
 }
 
-h1 {
-  font-size: 2.5rem;
-  color: #ffd000;
+.home-container {
+  display: flex;
+  flex-wrap: wrap; /* ทำให้สามารถแยกส่วนที่ต้องการแสดงแบบ responsive */
+  justify-content: space-between; /* จัดตำแหน่งของข้อความและรูปภาพ */
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* จัดรูปแบบข้อความ */
+.home-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.home-text h1 {
+  font-size: 32px;
+  color: #333;
   margin-bottom: 20px;
 }
 
-h2 {
-  font-size: 2rem;
-  color: #2980b9;
+.intro {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.philosophy h2 {
+  font-size: 24px;
+  color: #4CAF50;
   margin-bottom: 10px;
 }
 
-p {
-  font-size: 1.6rem;
-  color: #ffffff;
-  font-weight: bold;
+.philosophy p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
 }
 
-h3 {
-  text-align: left;
+/* จัดรูปแบบภาพ */
+.home-images {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* สร้าง 2 คอลัมน์ */
+  gap: 20px;
+  padding: 20px;
 }
 
-.home {
-  border-radius: 10px;
-  margin: 0 auto;
-  background-color: #17570a;
+.home-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* ทำให้มุมของรูปภาพโค้ง */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ใส่เงาให้รูปภาพ */
+  transition: transform 0.3s ease-in-out;
+}
+
+.home-image:hover {
+  transform: scale(1.05); /* ขยายรูปเมื่อ hover */
+}
+
+/* สำหรับหน้าจอขนาดเล็ก */
+@media screen and (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-images {
+    grid-template-columns: 1fr; /* เปลี่ยนเป็นคอลัมน์เดียวสำหรับมือถือ */
+  }
 }
